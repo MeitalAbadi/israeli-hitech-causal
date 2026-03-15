@@ -1,0 +1,14 @@
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.15
+statsmodels>=0.14
+scipy>=1.11
+causalpy>=0.4
+pymc>=5.10
+arviz>=0.16
+streamlit>=1.28
+requests>=2.31
+beautifulsoup4>=4.12
+jupyter>=1.0

@@ -1,0 +1,32 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# envs
+.env
+.venv/
+venv/
+env/
+
+# data (heavy or sensitive raw pulls stay out, keep folder structure)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# results — commit final, ignore intermediate
+results/plots/*.tmp.png
+results/scratch/
+
+# os
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+*.swp
