@@ -12,15 +12,9 @@ __pycache__/
 venv/
 env/
 
-# data (heavy or sensitive raw pulls stay out, keep folder structure)
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-
-# results — commit final, ignore intermediate
-results/plots/*.tmp.png
+# scratch — temp working files only, not cleaned outputs
 results/scratch/
+*.tmp.png
 
 # os
 .DS_Store
@@ -30,3 +24,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Note: data/raw/ and data/processed/ are kept in git on purpose.
+# The dataset is public, small, and reproducibility matters more than
+# repo slimness for this project.
