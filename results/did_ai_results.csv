@@ -1,0 +1,2 @@
+treatment_date,window_start,window_end,n_tech_tickers,n_non_tech_tickers,n_observations,did_coefficient,did_pct_effect,did_pct_ci95_lo,did_pct_ci95_hi,p_value,r_squared
+2023-03-14,2022-09-14,2023-09-14,4,5,2152,0.1148,12.16,4.22,20.7,0.0022,0.341
