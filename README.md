@@ -52,9 +52,33 @@ docs/            # methodology notes and decisions
 
 ## Status
 
-In progress. Started as an intensive build over a couple of days. Will keep refining.
+Day 1 of the intensive build is finished. The first cut of both causal models is in.
 
-Current focus: data acquisition + cleaning + first ITS run.
+## Initial findings (preliminary, before validation phase)
+
+Two complementary results, both statistically significant:
+
+**1. War shock on Israeli equities (Interrupted Time Series, anchored to October 7, 2023):**
+
+| ticker | name | level shift after Oct 7 | 95% CI | p |
+|---|---|---|---|---|
+| TA-35 | broad market | -11.5% | [-14.1%, -8.9%] | <0.0001 |
+| TA-90 | mid-cap | -5.7% | [-9.7%, -1.5%] | 0.008 |
+| Allot | network/cyber | -18.0% | [-27.3%, -7.5%] | 0.001 |
+| Formula Systems | IT services | -6.4% | [-11.6%, -0.8%] | 0.025 |
+| **Nice** | **CX/AI software** | **+21.7%** | **[+12.8%, +31.3%]** | **<0.0001** |
+
+So the war hit broad markets and infrastructure plays, but did not hit AI-aligned software. NICE actually rose, sharply.
+
+**2. AI shock on tech vs non-tech equities (Difference-in-Differences around GPT-4 release, March 14, 2023):**
+
+Tech equities (NICE, XLK, IXN, QQQ) outperformed non-tech equities (TA-35, EWU, EWG, EWS, VGK) by **+12.2% [+4.2%, +20.7%]**, p = 0.002, in the six months after GPT-4 was released.
+
+This matches the broader hypothesis: the AI tide lifted the tech sector globally, including in Israel, even as the war hit the rest of Israeli equities later that year.
+
+**The combined story:** for AI-aligned Israeli companies, the AI tailwind was strong enough to compensate for the war shock. For everyone else, the war was a clear negative. Calling it "the war hurt Israeli hi-tech" misses what the data actually shows.
+
+These are first-pass results. Day 2 of the build adds robustness checks (sensitivity to window length, placebo dates, synthetic control), an interactive dashboard, and a write-up.
 
 ## What this is not
 
